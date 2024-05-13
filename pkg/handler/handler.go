@@ -1,4 +1,4 @@
-package hendler
+package handler
 
 import (
 	"jsonapp/pkg/service"
@@ -6,20 +6,20 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-type Hendler struct {
-	service *service.Service
+type Handler struct {
+	services *service.Service
 }
 
-func NewHendler(service *service.Service) *Hendler {
-	return &Hendler{service: service}
+func NewHandler(services *service.Service) *Handler {
+	return &Handler{services: services}
 }
 
-func (h *Hendler) InitRoutes() *gin.Engine {
+func (h *Handler) InitRoutes() *gin.Engine {
 	router := gin.New()
 
 	auth := router.Group("/auth")
 	{
-		auth.POST("/sing-up", h.singUp)
+		//auth.POST("/sing-up", h.singUp)
 		auth.POST("/sing-in", h.singIn)
 	}
 

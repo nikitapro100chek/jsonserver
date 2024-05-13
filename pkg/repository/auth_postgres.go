@@ -4,7 +4,8 @@ import (
 	"fmt"
 
 	"github.com/jmoiron/sqlx"
-	"github.com/zhashkevych/todo-app"
+	//"github.com/zhashkevych/todo-app"
+	todo "jsonapp"
 )
 
 type AuthPostgres struct {

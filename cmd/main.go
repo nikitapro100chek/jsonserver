@@ -1,7 +1,8 @@
 package main
 
 import (
-	"jsonapp/pkg/hendler"
+	todo "jsonapp"
+	"jsonapp/pkg/handler"
 	"jsonapp/pkg/repository"
 	"jsonapp/pkg/service"
 	"os"
@@ -11,7 +12,7 @@ import (
 	"github.com/sirupsen/logrus"
 
 	"github.com/spf13/viper"
-	"github.com/zhashkevych/todo-app"
+	//"github.com/zhashkevych/todo-app"
 )
 
 func main() {
@@ -40,10 +41,10 @@ func main() {
 
 	repos := repository.NewRepository(db)
 	services := service.NewService(*repos)
-	hendlers := hendler.NewHendler(services)
+	handlers := handler.NewHandler(services)
 
 	srv := new(todo.Server)
-	if err := srv.Run(viper.GetString("port"), hendlers.InitRoutes()); err != nil {
+	if err := srv.Run(viper.GetString("port"), handlers.InitRoutes()); err != nil {
 		logrus.Fatalf("error running http server %s", err.Error())
 	}
 

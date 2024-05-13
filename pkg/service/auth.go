@@ -4,10 +4,9 @@ import (
 	"crypto/sha1"
 	"fmt"
 
-	//todo "jsonapp"
+	todo "jsonapp"
 	"jsonapp/pkg/repository"
-
-	"github.com/zhashkevych/todo-app"
+	//"github.com/zhashkevych/todo-app"
 )
 
 const salt = "tiurjkfgn675849dkjfgh"
