@@ -5,6 +5,7 @@ import (
 	"net/http"
 
 	"github.com/gin-gonic/gin"
+	_ "github.com/lib/pq"
 	//"github.com/zhashkevych/todo-app"
 )
 
@@ -27,7 +28,12 @@ func (h *Handler) signUp(c *gin.Context) {
 	})
 }
 
-func (h *Handler) singIn(c *gin.Context) {
+type signInInput struct {
+	//Username string `json:"username" binding:"required"`
+	//Password string `json:"password" binding:"required"`
+}
+
+func (h *Handler) signIn(c *gin.Context) {
 	var input todo.User
 
 	if err := c.BindJSON(&input); err != nil {
