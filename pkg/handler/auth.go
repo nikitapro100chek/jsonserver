@@ -1,14 +1,12 @@
 package handler
 
 import (
-	// todo "jsonapp"
 	"net/http"
 
 	todo "github.com/nikitapro100chek/jsonserver"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"
-	//"github.com/zhashkevych/todo-app"
 )
 
 func (h *Handler) signUp(c *gin.Context) {

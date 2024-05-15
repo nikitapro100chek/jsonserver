@@ -1,10 +1,8 @@
 package repository
 
 import (
-	todo "github.com/nikitapro100chek/jsonserver"
-
 	"github.com/jmoiron/sqlx"
-	//"github.com/zhashkevych/todo-app"
+	todo "github.com/nikitapro100chek/jsonserver"
 )
 
 type Authorization interface {
@@ -37,7 +35,7 @@ type Repository struct {
 func NewRepository(db *sqlx.DB) *Repository {
 	return &Repository{
 		Authorization: NewAuthPostgres(db),
-		//	TodoList:      NewTodoListPostgres(db),
+		TodoList:      NewTodoListPostgres(db),
 		//	TodoItem:      NewTodoItemPostgres(db),
 	}
 }

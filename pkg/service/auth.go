@@ -11,7 +11,6 @@ import (
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
-	//"github.com/zhashkevych/todo-app"
 )
 
 const (

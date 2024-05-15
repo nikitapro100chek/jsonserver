@@ -1,10 +1,6 @@
 package main
 
 import (
-	// todo "jsonapp"
-	// "jsonapp/pkg/handler"
-	// "jsonapp/pkg/repository"
-	// "jsonapp/pkg/service"
 	"os"
 
 	todo "github.com/nikitapro100chek/jsonserver"
