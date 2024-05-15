@@ -1,8 +1,10 @@
 package handler
 
 import (
-	todo "jsonapp"
+	// todo "jsonapp"
 	"net/http"
+
+	todo "github.com/nikitapro100chek/jsonserver"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/lib/pq"

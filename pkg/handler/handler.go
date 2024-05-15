@@ -1,9 +1,8 @@
 package handler
 
 import (
-	"jsonapp/pkg/service"
-
 	"github.com/gin-gonic/gin"
+	"github.com/nikitapro100chek/jsonserver/pkg/service"
 )
 
 type Handler struct {

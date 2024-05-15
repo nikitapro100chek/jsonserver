@@ -2,10 +2,12 @@ package repository
 
 import (
 	"fmt"
-	todo "jsonapp"
+
+	todo "github.com/nikitapro100chek/jsonserver"
+
+	// todo "jsonapp"
 
 	"github.com/jmoiron/sqlx"
-	//"github.com/zhashkevych/todo-app"
 )
 
 type AuthPostgres struct {

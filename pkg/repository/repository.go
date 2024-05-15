@@ -1,7 +1,7 @@
 package repository
 
 import (
-	todo "jsonapp"
+	todo "github.com/nikitapro100chek/jsonserver"
 
 	"github.com/jmoiron/sqlx"
 	//"github.com/zhashkevych/todo-app"

@@ -1,11 +1,16 @@
 package main
 
 import (
-	todo "jsonapp"
-	"jsonapp/pkg/handler"
-	"jsonapp/pkg/repository"
-	"jsonapp/pkg/service"
+	// todo "jsonapp"
+	// "jsonapp/pkg/handler"
+	// "jsonapp/pkg/repository"
+	// "jsonapp/pkg/service"
 	"os"
+
+	todo "github.com/nikitapro100chek/jsonserver"
+	"github.com/nikitapro100chek/jsonserver/pkg/handler"
+	"github.com/nikitapro100chek/jsonserver/pkg/repository"
+	"github.com/nikitapro100chek/jsonserver/pkg/service"
 
 	"github.com/joho/godotenv"
 	_ "github.com/lib/pq"

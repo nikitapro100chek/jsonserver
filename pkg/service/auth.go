@@ -4,8 +4,10 @@ import (
 	"crypto/sha1"
 	"errors"
 	"fmt"
-	todo "jsonapp"
-	"jsonapp/pkg/repository"
+
+	todo "github.com/nikitapro100chek/jsonserver"
+	"github.com/nikitapro100chek/jsonserver/pkg/repository"
+
 	"time"
 
 	"github.com/dgrijalva/jwt-go"
