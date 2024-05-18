@@ -13,9 +13,10 @@ import (
 	"github.com/dgrijalva/jwt-go"
 )
 
+// "hjqrhjqw124617ajfhajs"
 const (
-	salt       = "hjqrhjqw124617ajfhajs"
-	signingKey = "qrkjk#4#%35FSFJlja#4353KSFjH"
+	salt       = "hjqrhjqw124617afvwevw"
+	signingKey = "qrkjk#4#%35FSFJlja#43wtvwvw0"
 	tokenTTL   = 12 * time.Hour
 )
 

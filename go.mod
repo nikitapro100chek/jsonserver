@@ -3,7 +3,7 @@ module github.com/nikitapro100chek/jsonserver
 go 1.22.2
 
 require (
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible //indirect
+	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.9.1
 	github.com/jmoiron/sqlx v1.4.0
 	github.com/joho/godotenv v1.5.1
